@@ -1,0 +1,13 @@
+﻿Выполняется установка сборки 'D:\Projects_epam\Task4\FileWatcherService\bin\Debug\FileWatcherService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\Projects_epam\Task4\FileWatcherService\bin\Debug\FileWatcherService.exe
+   logfile = D:\Projects_epam\Task4\FileWatcherService\bin\Debug\FileWatcherService.InstallLog
+Устанавливается служба FileService...
+Служба FileService успешно установлена.
+Создается исходный EventLog FileService в журнале Application...
+Выполняется фиксация сборки 'D:\Projects_epam\Task4\FileWatcherService\bin\Debug\FileWatcherService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\Projects_epam\Task4\FileWatcherService\bin\Debug\FileWatcherService.exe
+   logfile = D:\Projects_epam\Task4\FileWatcherService\bin\Debug\FileWatcherService.InstallLog

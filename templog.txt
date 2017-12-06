@@ -1,0 +1,3 @@
+06.12.2017 08:37:18 файл D:\Projects_epam\Task4\Temp\Новый текстовый документ.txt был создан
+06.12.2017 08:37:18 файл D:\Projects_epam\Task4\Temp\Новый текстовый документ.txt был изменен
+06.12.2017 08:37:19 файл D:\Projects_epam\Task4\Temp\Новый текстовый документ.txt был переименован в D:\Projects_epam\Task4\Temp\1.txt
