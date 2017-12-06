@@ -1,0 +1,10 @@
+D:\Projects_epam\Task4\DAL\bin\Debug\DAL.dll
+D:\Projects_epam\Task4\DAL\bin\Debug\DAL.pdb
+D:\Projects_epam\Task4\DAL\obj\Debug\DAL.dll
+D:\Projects_epam\Task4\DAL\obj\Debug\DAL.pdb
+D:\Projects_epam\Task4\DAL\bin\Debug\DAL.dll.config
+D:\Projects_epam\Task4\DAL\bin\Debug\EntityFramework.dll
+D:\Projects_epam\Task4\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects_epam\Task4\DAL\bin\Debug\EntityFramework.xml
+D:\Projects_epam\Task4\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects_epam\Task4\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
