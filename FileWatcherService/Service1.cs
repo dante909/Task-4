@@ -25,8 +25,8 @@ namespace FileWatcherService
         protected override void OnStart(string[] args)
         {
             watcher = new Watcher();
-            Thread loggerThread = new Thread(new ThreadStart(watcher.Start));
-            loggerThread.Start();
+            Thread watcherThread = new Thread(new ThreadStart(watcher.Start));
+            watcherThread.Start();
         }
 
         protected override void OnStop()

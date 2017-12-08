@@ -64,6 +64,10 @@
       <Project>{ea41b3d7-b03a-45fe-87bf-5e93e43e6557}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FileWatcherService\FileWatcherService.csproj">
+      <Project>{34a9a45c-2892-4101-bcff-22882a63afc8}</Project>
+      <Name>FileWatcherService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

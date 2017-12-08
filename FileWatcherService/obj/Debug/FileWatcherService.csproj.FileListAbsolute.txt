@@ -8,3 +8,5 @@ D:\Projects_epam\Task4\FileWatcherService\bin\Debug\EntityFramework.SqlServer.xm
 D:\Projects_epam\Task4\FileWatcherService\obj\Debug\FileWatcherService.csprojResolveAssemblyReference.cache
 D:\Projects_epam\Task4\FileWatcherService\obj\Debug\FileWatcherService.exe
 D:\Projects_epam\Task4\FileWatcherService\obj\Debug\FileWatcherService.pdb
+D:\Projects_epam\Task4\FileWatcherService\bin\Debug\DAL.dll
+D:\Projects_epam\Task4\FileWatcherService\bin\Debug\DAL.pdb

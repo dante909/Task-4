@@ -5,17 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace FileWatcherService
 {
     public class Watcher
     {
-        FileSystemWatcher watcher;
+        private FileSystemWatcher watcher;
         object obj = new object();
         bool enabled = true;
         public Watcher()
         {
-            watcher = new FileSystemWatcher("D:\\Projects_epam\\Task4\\Temp");
+            watcher = new FileSystemWatcher();
+            watcher.Path = ConfigurationManager.AppSettings["pathFolder"];
+            watcher.Filter = "*.csv";
             watcher.Deleted += Watcher_Deleted;
             watcher.Created += Watcher_Created;
             watcher.Changed += Watcher_Changed;
@@ -68,9 +71,9 @@ namespace FileWatcherService
         {
             lock (obj)
             {
-                using (StreamWriter writer = new StreamWriter("D:\\Projects_epam\\Task4\\templog.txt", true))
+                using (StreamWriter writer = new StreamWriter(ConfigurationManager.AppSettings["pathLog"], true))
                 {
-                    writer.WriteLine(String.Format("{0} файл {1} был {2}",
+                    writer.WriteLine(string.Format("{0} файл {1} был {2}",
                         DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss"), filePath, fileEvent));
                     writer.Flush();
                 }

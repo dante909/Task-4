@@ -1,3 +1,10 @@
-06.12.2017 08:37:18 файл D:\Projects_epam\Task4\Temp\Новый текстовый документ.txt был создан
-06.12.2017 08:37:18 файл D:\Projects_epam\Task4\Temp\Новый текстовый документ.txt был изменен
-06.12.2017 08:37:19 файл D:\Projects_epam\Task4\Temp\Новый текстовый документ.txt был переименован в D:\Projects_epam\Task4\Temp\1.txt
+﻿
+08.12.2017 11:51:02 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был создан
+08.12.2017 11:51:02 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был удален
+08.12.2017 11:51:02 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был создан
+08.12.2017 11:51:02 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был изменен
+08.12.2017 11:51:15 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был переименован в D:\\Projects_epam\\Task4\\Temp\BC5C6000
+08.12.2017 11:51:15 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был создан
+08.12.2017 11:51:15 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был изменен
+08.12.2017 11:51:53 файл D:\\Projects_epam\\Task4\\Temp\petrov_2017.csv был удален
+08.12.2017 11:51:53 файл D:\\Projects_epam\\Task4\\Temp\ivanov_2017.csv был удален

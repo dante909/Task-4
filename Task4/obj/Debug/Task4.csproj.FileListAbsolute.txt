@@ -10,3 +10,5 @@ D:\Projects_epam\Task4\Task4\bin\Debug\EntityFramework.dll
 D:\Projects_epam\Task4\Task4\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects_epam\Task4\Task4\bin\Debug\EntityFramework.xml
 D:\Projects_epam\Task4\Task4\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects_epam\Task4\Task4\bin\Debug\FileWatcherService.exe
+D:\Projects_epam\Task4\Task4\bin\Debug\FileWatcherService.pdb
