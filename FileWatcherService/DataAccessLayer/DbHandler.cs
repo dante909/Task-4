@@ -29,16 +29,13 @@ namespace FileWatcherService
                 var newManager = new Manager { ManagerName = report.ManagerName };
                     _managerRepo.Create(newManager);
 
-                var saleInfo = new SaleInfo
+                _saleInfoRepo.Create(new SaleInfo()
                 {
                     Date = report.DateOfSale,
                     ClientName = report.ClientName,
                     Cost = report.ProductCost,
                     Manager = newManager
-
-                };
-
-                _saleInfoRepo.Create(saleInfo);
+                });
             }
         }
     }

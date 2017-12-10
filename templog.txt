@@ -1,10 +1,6 @@
-﻿
-10.12.2017 02:09:07 файл D:\\Projects_epam\\Task4\\Temp\Новый текстовый документ.txt был создан
-10.12.2017 02:09:07 файл D:\\Projects_epam\\Task4\\Temp\Новый текстовый документ.txt был изменен
-10.12.2017 02:09:08 файл D:\\Projects_epam\\Task4\\Temp\Новый текстовый документ.txt был переименован в D:\\Projects_epam\\Task4\\Temp\12.txt
-10.12.2017 02:09:18 файл D:\\Projects_epam\\Task4\\Temp\12.txt был удален
-10.12.2017 02:09:29 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_19112.txt был создан
-10.12.2017 02:09:29 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_19112.txt был изменен
-10.12.2017 02:09:29 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_19112.txt был изменен
-10.12.2017 02:09:39 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_19112.txt был изменен
-10.12.2017 02:09:39 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_19112.txt был изменен
+﻿10.12.2017 06:34:56 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был создан
+10.12.2017 06:34:56 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был изменен
+10.12.2017 06:34:56 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был изменен
+10.12.2017 06:34:56 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был создан
+10.12.2017 06:34:56 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был изменен
+10.12.2017 06:34:56 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был изменен

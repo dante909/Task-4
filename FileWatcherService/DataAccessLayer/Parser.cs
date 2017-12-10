@@ -9,22 +9,22 @@ namespace FileWatcherService
 {
     public class Parser
     {
-        public Parser()
-        {
-        }
 
         public IList<Report> ParseData(string path)
         {
             string managerName;
             string[] param;
-            managerName = Path.GetFileName(path).Split('_').First();
+            managerName = Path.GetFileNameWithoutExtension(path).Split('_').First(); //GetFileName
             IList<Report> records = new List<Report>();
             using (StreamReader sr = new StreamReader(path))
             {
                 while (!sr.EndOfStream)
                 {
                     param = sr.ReadLine().Split(',');
-                    records.Add(new Report(managerName, param[0], param[1], param[2]));
+                    if (param != null)
+                    {
+                            records.Add(new Report(managerName, param[0], param[1], param[2]));
+                    }
                 }
             }
             return records;

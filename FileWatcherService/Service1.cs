@@ -13,7 +13,7 @@ namespace FileWatcherService
 {
     public partial class Service1 : ServiceBase
     {
-        Watcher watcher;
+        FileWatcher watcher;
         public Service1()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace FileWatcherService
 
         protected override void OnStart(string[] args)
         {
-            watcher = new Watcher();
+            watcher = new FileWatcher();
             Thread watcherThread = new Thread(new ThreadStart(watcher.Start));
             watcherThread.Start();
         }

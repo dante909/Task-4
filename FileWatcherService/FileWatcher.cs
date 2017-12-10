@@ -6,22 +6,26 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Configuration;
+using DAL.Repositories;
+using DAL.Interfaces;
+using DAL.Models;
 
 namespace FileWatcherService
 {
-    public class Watcher
+    public class FileWatcher
     {
         private FileSystemWatcher watcher;
-        private RecordsHandler recordHandler;
         private Task task;
+        private RecordsHandler recordHandler;
         object obj = new object();
         bool enabled = true;
-        public Watcher()
+
+        public FileWatcher()
         {
             watcher = new FileSystemWatcher();
             recordHandler = new RecordsHandler();
             watcher.Path = ConfigurationManager.AppSettings["pathFolder"];
-            //watcher.Filter = "*.csv";
+            watcher.Filter = "*.csv";
             watcher.Deleted += Watcher_Deleted;
             watcher.Created += Watcher_Created;
             watcher.Changed += Watcher_Changed;
@@ -41,7 +45,7 @@ namespace FileWatcherService
             watcher.EnableRaisingEvents = false;
             enabled = false;
         }
-        public void CallParse(object source, FileSystemEventArgs e)
+        public void CallParse(object sender, FileSystemEventArgs e)
         {
             string path;
             path = e.FullPath;
@@ -59,18 +63,18 @@ namespace FileWatcherService
         {
             string fileEvent = "изменен";
             string filePath = e.FullPath;
+            RecordEntry(fileEvent, filePath);
             task = new Task(() => CallParse(sender, e));
             task.Start();
-            RecordEntry(fileEvent, filePath);
         }
 
         private void Watcher_Created(object sender, FileSystemEventArgs e)
         {
             string fileEvent = "создан";
             string filePath = e.FullPath;
+            RecordEntry(fileEvent, filePath);
             task = new Task(() => CallParse(sender, e));
             task.Start();
-            RecordEntry(fileEvent, filePath);
         }
 
         private void Watcher_Deleted(object sender, FileSystemEventArgs e)
