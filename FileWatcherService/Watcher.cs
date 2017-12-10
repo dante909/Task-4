@@ -59,20 +59,18 @@ namespace FileWatcherService
         {
             string fileEvent = "изменен";
             string filePath = e.FullPath;
+            task = new Task(() => CallParse(sender, e));
+            task.Start();
             RecordEntry(fileEvent, filePath);
-            recordHandler.SaveRecords(filePath);
-            //task = new Task(() => CallParse(sender, e));
-            //task.Start();
         }
 
         private void Watcher_Created(object sender, FileSystemEventArgs e)
         {
             string fileEvent = "создан";
             string filePath = e.FullPath;
+            task = new Task(() => CallParse(sender, e));
+            task.Start();
             RecordEntry(fileEvent, filePath);
-            recordHandler.SaveRecords(filePath);
-            //task = new Task(() => CallParse(sender, e));
-            //task.Start();
         }
 
         private void Watcher_Deleted(object sender, FileSystemEventArgs e)

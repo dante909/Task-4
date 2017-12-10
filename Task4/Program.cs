@@ -34,8 +34,10 @@ namespace Task4
                 //    Console.WriteLine();
                 //}
 
-                EFGenericRepository<Manager> managerRepo = new EFGenericRepository<Manager>(new DAL.Contexts.AppContext());
-                EFGenericRepository<SaleInfo> salesRepo = new EFGenericRepository<SaleInfo>(new DAL.Contexts.AppContext());
+                EFGenericRepository<Manager> managerRepo = new EFGenericRepository<Manager>
+                    (new DAL.Contexts.AppContext());
+                EFGenericRepository<SaleInfo> salesRepo = new EFGenericRepository<SaleInfo>
+                    (new DAL.Contexts.AppContext());
                 IEnumerable<Manager> managers = managerRepo.GetWithInclude(p => p.Info);
                 foreach (Manager m in managers)
                 {
