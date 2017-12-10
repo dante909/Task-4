@@ -1,0 +1,12 @@
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\FileWatcherService.exe.config
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\FileWatcherService.exe
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\FileWatcherService.pdb
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\DAL.dll
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\EntityFramework.dll
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\EntityFramework.SqlServer.dll
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\DAL.pdb
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\EntityFramework.xml
+D:\Projects_epam\Task4\FileWatcherService\bin\x86\Debug\EntityFramework.SqlServer.xml
+D:\Projects_epam\Task4\FileWatcherService\obj\x86\Debug\FileWatcherService.csprojResolveAssemblyReference.cache
+D:\Projects_epam\Task4\FileWatcherService\obj\x86\Debug\FileWatcherService.exe
+D:\Projects_epam\Task4\FileWatcherService\obj\x86\Debug\FileWatcherService.pdb

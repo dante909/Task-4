@@ -20,7 +20,7 @@ namespace FileWatcherService
         {
             lock (this)
             {
-                using ( db = new DAL.Contexts.AppContext())
+                using (db = new DAL.Contexts.AppContext())
                 {
                     var newManager = new DAL.Models.Manager { ManagerName = report.ManagerName };
                     db.Managers.Add(newManager);

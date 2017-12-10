@@ -1,0 +1,14 @@
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\Task4.exe.config
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\Task4.exe
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\Task4.pdb
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\DAL.dll
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\EntityFramework.dll
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\EntityFramework.SqlServer.dll
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\FileWatcherService.exe
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\DAL.pdb
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\FileWatcherService.pdb
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\EntityFramework.xml
+D:\Projects_epam\Task4\Task4\bin\x86\Debug\EntityFramework.SqlServer.xml
+D:\Projects_epam\Task4\Task4\obj\x86\Debug\Task4.csprojResolveAssemblyReference.cache
+D:\Projects_epam\Task4\Task4\obj\x86\Debug\Task4.exe
+D:\Projects_epam\Task4\Task4\obj\x86\Debug\Task4.pdb

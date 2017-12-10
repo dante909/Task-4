@@ -12,13 +12,16 @@ namespace FileWatcherService
     public class Watcher
     {
         private FileSystemWatcher watcher;
+        private RecordsHandler recordHandler;
+        private Task task;
         object obj = new object();
         bool enabled = true;
         public Watcher()
         {
             watcher = new FileSystemWatcher();
+            recordHandler = new RecordsHandler();
             watcher.Path = ConfigurationManager.AppSettings["pathFolder"];
-            watcher.Filter = "*.csv";
+            //watcher.Filter = "*.csv";
             watcher.Deleted += Watcher_Deleted;
             watcher.Created += Watcher_Created;
             watcher.Changed += Watcher_Changed;
@@ -38,6 +41,12 @@ namespace FileWatcherService
             watcher.EnableRaisingEvents = false;
             enabled = false;
         }
+        public void CallParse(object source, FileSystemEventArgs e)
+        {
+            string path;
+            path = e.FullPath;
+            recordHandler.SaveRecords(path);
+        }
 
         private void Watcher_Renamed(object sender, RenamedEventArgs e)
         {
@@ -51,6 +60,9 @@ namespace FileWatcherService
             string fileEvent = "изменен";
             string filePath = e.FullPath;
             RecordEntry(fileEvent, filePath);
+            recordHandler.SaveRecords(filePath);
+            //task = new Task(() => CallParse(sender, e));
+            //task.Start();
         }
 
         private void Watcher_Created(object sender, FileSystemEventArgs e)
@@ -58,6 +70,9 @@ namespace FileWatcherService
             string fileEvent = "создан";
             string filePath = e.FullPath;
             RecordEntry(fileEvent, filePath);
+            recordHandler.SaveRecords(filePath);
+            //task = new Task(() => CallParse(sender, e));
+            //task.Start();
         }
 
         private void Watcher_Deleted(object sender, FileSystemEventArgs e)

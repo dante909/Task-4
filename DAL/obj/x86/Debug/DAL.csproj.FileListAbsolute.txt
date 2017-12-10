@@ -1,0 +1,9 @@
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\DAL.dll.config
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\DAL.dll
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\DAL.pdb
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\EntityFramework.dll
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\EntityFramework.SqlServer.dll
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\EntityFramework.xml
+D:\Projects_epam\Task4\DAL\bin\x86\Debug\EntityFramework.SqlServer.xml
+D:\Projects_epam\Task4\DAL\obj\x86\Debug\DAL.dll
+D:\Projects_epam\Task4\DAL\obj\x86\Debug\DAL.pdb
