@@ -15,7 +15,6 @@ namespace FileWatcherService
     public class FileWatcher
     {
         private FileSystemWatcher watcher;
-        private Task task;
         private RecordsHandler recordHandler;
         object obj = new object();
         bool enabled = true;
@@ -25,7 +24,7 @@ namespace FileWatcherService
             watcher = new FileSystemWatcher();
             recordHandler = new RecordsHandler();
             watcher.Path = ConfigurationManager.AppSettings["pathFolder"];
-            watcher.Filter = "*.csv";
+            //watcher.Filter = "*.csv";
             watcher.Deleted += Watcher_Deleted;
             watcher.Created += Watcher_Created;
             watcher.Changed += Watcher_Changed;
@@ -40,6 +39,7 @@ namespace FileWatcherService
                 Thread.Sleep(1000);
             }
         }
+
         public void Stop()
         {
             watcher.EnableRaisingEvents = false;
@@ -63,18 +63,32 @@ namespace FileWatcherService
         {
             string fileEvent = "изменен";
             string filePath = e.FullPath;
-            RecordEntry(fileEvent, filePath);
-            task = new Task(() => CallParse(sender, e));
-            task.Start();
+            //RecordEntry(fileEvent, filePath);
+            var outer = Task.Factory.StartNew(() =>      
+            {
+                RecordEntry(fileEvent, filePath);
+                var inner = Task.Factory.StartNew(() =>  
+                {
+                    CallParse(sender, e);
+                });
+            });
+            outer.Wait();
         }
 
         private void Watcher_Created(object sender, FileSystemEventArgs e)
         {
             string fileEvent = "создан";
             string filePath = e.FullPath;
-            RecordEntry(fileEvent, filePath);
-            task = new Task(() => CallParse(sender, e));
-            task.Start();
+            //RecordEntry(fileEvent, filePath);
+            var outer = Task.Factory.StartNew(() =>      
+            {
+                RecordEntry(fileEvent, filePath);
+                var inner = Task.Factory.StartNew(() =>  
+                {
+                    CallParse(sender, e);
+                });
+            });
+            outer.Wait(); 
         }
 
         private void Watcher_Deleted(object sender, FileSystemEventArgs e)

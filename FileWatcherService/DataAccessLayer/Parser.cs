@@ -23,7 +23,7 @@ namespace FileWatcherService
                     param = sr.ReadLine().Split(',');
                     if (param != null)
                     {
-                            records.Add(new Report(managerName, param[0], param[1], param[2]));
+                         records.Add(new Report(managerName, param[0], param[1], param[2]));
                     }
                 }
             }

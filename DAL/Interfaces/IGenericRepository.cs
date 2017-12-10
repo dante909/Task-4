@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IGenericRepository<TEntity> where TEntity : class
+    public interface IGenericRepository<TEntity> : IDisposable
+        where TEntity : class
     {
         void Create(TEntity item);
         TEntity FindById(int id);
