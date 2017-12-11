@@ -44,6 +44,7 @@ namespace FileWatcherService
         {
             watcher.EnableRaisingEvents = false;
             enabled = false;
+            watcher.Dispose();
         }
         public void CallParse(object sender, FileSystemEventArgs e)
         {

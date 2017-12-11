@@ -29,6 +29,7 @@ namespace Task4
                 }
                 Console.WriteLine();
             }
+            managerRepo.Dispose();
         }
     }
 }
