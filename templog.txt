@@ -1,10 +1,1 @@
-﻿10.12.2017 11:07:32 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был создан
-10.12.2017 11:08:07 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был создан
-10.12.2017 11:09:06 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был удален
-10.12.2017 11:09:07 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был удален
-10.12.2017 11:09:17 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был создан
-10.12.2017 11:09:17 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был изменен
-10.12.2017 11:09:17 файл D:\\Projects_epam\\Task4\\Temp\sidoro_19112.txt был изменен
-10.12.2017 11:09:17 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был создан
-10.12.2017 11:09:18 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был изменен
-10.12.2017 11:09:19 файл D:\\Projects_epam\\Task4\\Temp\Ivanov_11232.txt был изменен
+﻿

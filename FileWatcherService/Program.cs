@@ -9,7 +9,6 @@ namespace FileWatcherService
 {
     static class Program
     {
-
         static void Main()
         {
             ServiceBase[] ServicesToRun;

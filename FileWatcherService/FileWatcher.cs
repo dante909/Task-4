@@ -24,7 +24,7 @@ namespace FileWatcherService
             watcher = new FileSystemWatcher();
             recordHandler = new RecordsHandler();
             watcher.Path = ConfigurationManager.AppSettings["pathFolder"];
-            //watcher.Filter = "*.csv";
+            watcher.Filter = "*.csv";
             watcher.Deleted += Watcher_Deleted;
             watcher.Created += Watcher_Created;
             watcher.Changed += Watcher_Changed;
@@ -63,7 +63,6 @@ namespace FileWatcherService
         {
             string fileEvent = "изменен";
             string filePath = e.FullPath;
-            //RecordEntry(fileEvent, filePath);
             var outer = Task.Factory.StartNew(() =>      
             {
                 RecordEntry(fileEvent, filePath);
@@ -79,7 +78,6 @@ namespace FileWatcherService
         {
             string fileEvent = "создан";
             string filePath = e.FullPath;
-            //RecordEntry(fileEvent, filePath);
             var outer = Task.Factory.StartNew(() =>      
             {
                 RecordEntry(fileEvent, filePath);

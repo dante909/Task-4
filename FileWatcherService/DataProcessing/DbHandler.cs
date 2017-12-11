@@ -26,16 +26,23 @@ namespace FileWatcherService
         {
             lock (this)
             {
-                var newManager = new Manager { ManagerName = report.ManagerName };
+                try
+                {
+                    var newManager = new Manager { ManagerName = report.ManagerName };
                     _managerRepo.Create(newManager);
 
-                _saleInfoRepo.Create(new SaleInfo()
+                    _saleInfoRepo.Create(new SaleInfo()
+                    {
+                        Date = report.DateOfSale,
+                        ClientName = report.ClientName,
+                        Cost = report.ProductCost,
+                        Manager = newManager
+                    });
+                }
+                catch (FormatException e)
                 {
-                    Date = report.DateOfSale,
-                    ClientName = report.ClientName,
-                    Cost = report.ProductCost,
-                    Manager = newManager
-                });
+                    throw new Exception("The order of items  is  incorrect!");
+                }
             }
         }
     }
